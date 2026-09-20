@@ -22,45 +22,8 @@ If the retrieved context does not support an answer, Labi refuses to guess inste
 
 ##  Architecture
 
-### Indexing
+<img width="1472" height="1006" alt="image" src="https://github.com/user-attachments/assets/6adc5ccd-4f8d-421b-a3f5-38a22068c1a5" />
 
-```text
-Source Documents
-      ↓
-Extraction & Cleaning
-      ↓
-Chunking
-      ↓
-Multilingual Embeddings
-      ↓
-ChromaDB
-```
-
-### Query Time
-
-```text
-User Query
-    ↓
-Language Detection
-    ↓
-Intent Classification
-    ↓
-Bilingual Retrieval
-    ↓
-Intent-Based Re-ranking
-    ↓
-Response Generation
-    ↓
-Grounding Verification
-    ↓
-┌───────────────┬──────────────────┐
-│     Pass      │       Fail       │
-│       ↓       │        ↓         │
-│ Show Response │  Refuse / No-Answer
-└───────────────┴──────────────────┘
-```
-
----
 
 ##  Tech Stack
 
